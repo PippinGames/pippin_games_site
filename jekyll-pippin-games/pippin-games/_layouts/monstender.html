@@ -1,77 +1,190 @@
 ---
 layout: default
 ---
-
-  <div class="row" style="margin: 2%;"></div>
-
-  <!-- Page Content -->
-  <div class="container">
-
-    <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Portfolio Item
-      <small>Subheading</small>
-    </h1>
-
-    <ol class="breadcrumb">
+<div class="row" style="margin: 2%;"></div>
+<div class="container">
+   <!-- Page Heading/Breadcrumbs -->
+   <h1 class="mt-4 mb-3">Press Kit
+      <small>{{site.data.monstender_press.title}}</small>
+   </h1>
+   <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="/">Home</a>
+         <a href="/">Home</a>
       </li>
-      <li class="breadcrumb-item active">Portfolio Item</li>
-    </ol>
-
-    <!-- Portfolio Item Row -->
-    <div class="row">
-
-      <div class="col-md-8">
-        <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+      <li class="breadcrumb-item active">{{site.data.monstender_press.title}}</li>
+   </ol>
+</div>
+<div class="row">
+   <div class="fixed-bottom text-right mb-md-5 mr-md-5 col-md-1 offset-md-11"><a href="#navigation" class="nav-link js-scroll-trigger" style="font-size:3em"><i class="fa fa-angle-double-up fa-2x"></i></a></div>
+</div>
+<div class="uk-container uk-container-center">
+   <div class="uk-grid">
+      <div id="navigation" class="uk-width-medium-1-4">
+         <h1 class="nav-header">{{site.data.monstender_press.company_name}}</h1>
+         <a class="nav-header" href="http://{{site.data.monstender_press.website_company}}">{{site.data.monstender_press.website_company}}</a>
+         <div class="list-group list-group-flush">
+            <ul class="uk-nav uk-nav-side">
+               <li><a href="#factsheet" class="list-group-item nav-link js-scroll-trigger">Factsheet</a></li>
+               <li><a href="#description" class="list-group-item nav-link js-scroll-trigger">Description</a></li>
+               <li><a href="#history" class="list-group-item nav-link js-scroll-trigger">History</a></li>
+               {% if site.data.monstender_press.projects[0].title != "" %}
+               <li><a href="#projects" class="list-group-item nav-link js-scroll-trigger">Projects</a></li>
+               {% endif %}
+               <li><a href="#trailers" class="list-group-item nav-link js-scroll-trigger">Videos</a></li>
+               <li><a href="#images" class="list-group-item nav-link js-scroll-trigger">Images</a></li>
+               <li><a href="#logo" class="list-group-item nav-link js-scroll-trigger">Logo &amp; Icon</a></li>
+               {% if site.data.monstender_press.awards[0].title != "" %}
+               <li><a href="#awards" class="list-group-item nav-link js-scroll-trigger">Awards &amp; Recognition</a></li>
+               {% endif %}
+               {% if site.data.monstender_press.articles[0].title != "" %} 
+               <li><a href="#quotes" class="list-group-item nav-link js-scroll-trigger">Selected Articles</a></li>
+               {% endif %}
+               {% if site.data.monstender_press.additional[0].description != "" %}
+               <li><a href="#links" class="list-group-item nav-link js-scroll-trigger">Additional Links</a></li>
+               {% endif %}
+               <li><a href="#credits" class="list-group-item nav-link js-scroll-trigger">Team</a></li>
+               <li><a href="#contact" class="list-group-item nav-link js-scroll-trigger">Contact</a></li>
+            </ul>
+         </div>
       </div>
-
-      <div class="col-md-4">
-        <h3 class="my-3">Project Description</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-        <h3 class="my-3">Project Details</h3>
-        <ul>
-          <li>Lorem Ipsum</li>
-          <li>Dolor Sit Amet</li>
-          <li>Consectetur</li>
-          <li>Adipiscing Elit</li>
-        </ul>
+      <div id="content" class="uk-width-medium-3-4">
+         <img src="{{ site.data.monstender_press.header_image | relative_url }}" class="header img-fluid rounded">					
+         <div class="uk-grid">
+            <div class="uk-width-medium-2-6">
+               <h2 id="factsheet">Factsheet</h2>
+               <p>
+                  <strong>Developer:</strong><br/>
+                  <a href="http://{{ site.data.monstender_press.website_company }}">{{ site.data.monstender_press.company_name }}</a><br/>
+                  {{ site.data.monstender_press.localizacao_company }}
+               </p>
+               <p>
+                  <strong>Founding date:</strong><br/>
+                  {{ site.data.monstender_press.birth_company }}
+               </p>
+               <p>
+                  <strong>Website:</strong><br/>
+                  <a href="http://{{ site.data.monstender_press.website_company }}">{{ site.data.monstender_press.website_company }}</a>
+               </p>
+               <p>
+                  <strong>Press / Business contact:</strong><br/>
+                  <a href="mailto:{{ site.data.monstender_press.email_company }}">{{ site.data.monstender_press.email_company }}</a>
+               </p>
+               <p>
+                  <strong>Social:</strong><br/><a href="http://{{ site.data.monstender_press.twitter }}">{{ site.data.monstender_press.twitter }}</a><br/><a href="http://{{ site.data.monstender_press.facebook }}">{{ site.data.monstender_press.facebook }}</a><br/>							
+               </p>
+               <!--
+                  <p>
+                     <strong>Releases:</strong><br />							
+                  </p>
+                  <p><strong>Address:</strong><br/>Address Line 1<br/>Address Line 2<br/>Address Line 3<br/>							</p>
+                  <p>
+                     <strong>Phone:</strong><br/>
+                     +00 (1) 22 33 44 55 66
+                  </p>
+                  
+                  -->
+            </div>
+            <div class="uk-width-medium-4-6 text-justify">
+               <h2 id="description">Description</h2>
+               <p>	
+                  {{ site.data.monstender_press.descricao }}
+               </p>
+               <h2 id="history">History</h2>
+               {{ site.data.monstender_press.historia }}
+               {% if site.data.monstender_press.projects[0].title != "" %}
+               <h2 id="projects">Projects</h2>
+               <ul>
+                  {% for p in site.data.monstender_press.projects %}
+                  <li>
+                     <a href="http://{{p.link}}">{{p.title}}</a>
+                  </li>
+                  {% endfor %}
+               </ul>
+               {% endif %} 
+            </div>
+         </div>
+         <hr>
+         <!-- Videos e trailers -->
+         <h2 id="trailers">Videos</h2>
+         {% for video in site.data.monstender_press.videos_youtube %}
+         <p><strong>{{video.title}}</strong>&nbsp;<a href="http://www.youtube.com/watch?v={{video.link}}">YouTube</a>
+         <div class="uk-responsive-width iframe-container">
+            <iframe src="http://www.youtube.com/embed/{{video.link}}" frameborder="0" allowfullscreen></iframe>
+         </div>
+         </p>
+         {% endfor %}         				
+         <hr>
+         <!-- Gifs e screenshorts do gameplay -->
+         <h2 id="images">Images</h2>
+         <a href="{{ site.data.monstender_press.zip_images | relative_url }}">
+            <div class="uk-alert">download all screenshots &amp; photos as .zip (36MB)</div>
+         </a>
+         <div class="uk-grid images">
+            {% assign image_files = site.static_files | where: "monstender_images", true %}
+            {% for myimage in image_files %}              
+            <div class="uk-width-medium-1-2"><a href="{{ myimage.path | relative_url }}"><img class="img-fluid img-thumbnail" src="{{ myimage.path | relative_url }}" alt="{{ myimage.path | relative_url }}" /></a></div>
+            {% endfor %}            
+         </div>
+         <p class="images-text">There are far more images available for Company Name, but these are the ones we felt would be most useful to you. If you have specific requests, please do <a href="#contact">contact us</a>!</p>
+         <hr>
+         <h2 id="logo">Logo &amp; Icon</h2>
+         <a href="{{ site.data.monstender_press.zip_logo | relative_url }}">
+            <div class="uk-alert">download logo files as .zip (36KB)</div>
+         </a>
+         <div class="uk-grid images">
+            <div class="uk-width-medium-1-2"><a href="{{ site.data.monstender_press.logo_image | relative_url }}"><img class="img-fluid img-thumbnail" src="{{ site.data.monstender_press.logo_image | relative_url }}" alt="logo" /></a></div>
+            <div class="uk-width-medium-1-2"><a href="{{ site.data.monstender_press.icon_image | relative_url }}"><img class="img-fluid img-thumbnail" src="{{ site.data.monstender_press.icon_image | relative_url }}" alt="icon" /></a></div>
+         </div>
+         <hr>
+         <br>
+         {% if site.data.monstender_press.awards[0].title != "" %}               
+         <h2 id="awards">Awards &amp; Recognition</h2>
+         <ul>
+            {% for award in site.data.monstender_press.awards %}
+            <li>"{{ award.title }}" - <cite>{{ award.city }}</cite></li>
+            {% endfor %}       
+         </ul>
+         <hr>
+         {% endif %}
+         {% if site.data.monstender_press.articles[0].title != "" %}  
+         <h2 id="quotes">Selected Articles</h2>
+         <ul>
+            {% for article in site.data.monstender_press.articles %}
+            <li>"{{ article.title }}"<br/><cite>- {{ article.author }}, <a href="http://{{ article.link }}">link</a></cite></li>
+            </li>
+            {% endfor %}            
+         </ul>
+         <hr>
+         {% endif %}
+         {% if site.data.monstender_press.additional[0].description != "" %}  
+         <h2 id="links">Additional Links</h2>
+         {% for add in site.data.monstender_press.additional %}         
+         <p>
+            <strong>{{add.company}}</strong><br/>
+            {{add.company}} <a href="http://{{add.link}}" alt="{{add.link}}">{{add.link}}</a>.
+         </p>
+         {% endfor %}
+         <hr>
+         {% endif %}
+         <div class="uk-grid">
+            <div class="uk-width-medium-1-2">
+               <h2 id="credits">Team &amp; Repeating Collaborator</h2>
+               <p><strong>John Doe</strong><br/>Artist, Freelancer</p>
+               <p><strong>Oliver Twist</strong><br/><a href="http://olivertwist.com/">Artist, Freelancer</a></p>
+               <p><strong>Jane Doette</strong><br/><a href="http://olivertwist.com/">Music, Freelancer</a></p>
+            </div>
+            <div class="uk-width-medium-1-2">
+               <h2 id="contact">Contact</h2>
+               <p><strong>Inquiries</strong><br/><a href="mailto:rami@vlambeer.com">rami@vlambeer.com</a></p>
+               <p><strong>Twitter</strong><br/><a href="http://twitter.com/MyCompanyName">twitter.com/MyCompanyName</a></p>
+               <p><strong>Facebook</strong><br/><a href="http://facebook.com/MyCompanyName">facebook.com/MyCompanyName</a></p>
+               <p><strong>Web</strong><br/><a href="http://MyCompanyWebsite.com">MyCompanyWebsite.com</a></p>
+            </div>
+         </div>
+         <hr>
+         <p><a href="http://dopresskit.com/">presskit()</a> by Rami Ismail (<a href="http://www.vlambeer.com/">Vlambeer</a>)</p>
       </div>
-
-    </div>
-      <!-- /.row -->
-
-    <!-- Related Projects Row -->
-    <h3 class="my-4">Related Projects</h3>
-
-    <div class="row">
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#">
-          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-        </a>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-  </div>
-<!-- /.container -->
+   </div>
+</div>
+<br>      
+<br>
