@@ -168,17 +168,17 @@ layout: default
          {% endif %}
          <div class="uk-grid">
             <div class="uk-width-medium-1-2">
-               <h2 id="credits">Team &amp; Repeating Collaborator</h2>
-               <p><strong>John Doe</strong><br/>Artist, Freelancer</p>
-               <p><strong>Oliver Twist</strong><br/><a href="http://olivertwist.com/">Artist, Freelancer</a></p>
-               <p><strong>Jane Doette</strong><br/><a href="http://olivertwist.com/">Music, Freelancer</a></p>
+               <h2 id="credits">Team &amp; Collaborator</h2>
+               {% for t in site.data.monstender_press.team %}
+               <p><strong>{{t.name}}</strong><br/><a href="http://{{t.link}}">{{t.cargo}}</a></p>
+               {% endfor %}               
             </div>
             <div class="uk-width-medium-1-2">
                <h2 id="contact">Contact</h2>
-               <p><strong>Inquiries</strong><br/><a href="mailto:rami@vlambeer.com">rami@vlambeer.com</a></p>
-               <p><strong>Twitter</strong><br/><a href="http://twitter.com/MyCompanyName">twitter.com/MyCompanyName</a></p>
-               <p><strong>Facebook</strong><br/><a href="http://facebook.com/MyCompanyName">facebook.com/MyCompanyName</a></p>
-               <p><strong>Web</strong><br/><a href="http://MyCompanyWebsite.com">MyCompanyWebsite.com</a></p>
+               <p><strong>Inquiries</strong><br/><a href="mailto:studiopippingames@gmail.com">studiopippingames@gmail.com</a></p>
+               <p><strong>Twitter</strong><br/><a href="https://twitter.com/pippin_games">twitter.com/pippin_games</a></p>
+               <p><strong>Facebook</strong><br/><a href="https://www.facebook.com/PippinGames">facebook.com/PippinGames</a></p>
+               <p><strong>Web</strong><br/><a href="http://pippingames.com">pippingames.com</a></p>
             </div>
          </div>
          <hr>

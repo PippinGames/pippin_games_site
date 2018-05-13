@@ -1,5 +1,5 @@
 #informações basicas da empresa e jogo
-title: Monstender
+title: Kawaii Deathu Desu
 company_name: Pippin Games
 website_company: pippingames.com
 email_company: studiopippingames@gmail.com
@@ -8,19 +8,19 @@ facebook: facebook.com/PippinGames
 instagram: ""
 
 #paths do assets de imagens da pagina
-header_image: "/assets/images/monstender/header.png"
-icon_image: "/assets/images/monstender/icon.png"
-logo_image: "/assets/images/monstender/logo.png"
-zip_logo: "/assets/images/monstender/logo.zip"
-zip_images: "/assets/images/monstender/images.zip"
+header_image: "/assets/images/kdd/header.png"
+icon_image: "/assets/images/kdd/icon.png"
+logo_image: "/assets/images/kdd/logo.png"
+zip_logo: "/assets/images/kdd/logo.zip"
+zip_images: "/assets/images/kdd/images.zip"
 
 #lista contendo todos os videos relevantes
 videos_youtube:
-  - title: Teaser Trailer
-    link: Jr_2t4dSmzs
+  - title: New Build
+    link: CSDdfP4YEZI
 
-  - title: GamePlay
-    link: fVxLpVYTM0E
+  - title: GamePlay Death-chan
+    link: VaBYx9xY4Ts
 
 #informações que podem receber alguma translation futuramente
 localizacao_company: Localizada em Natal, Rio grande do Norte
