@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Monstender 1"
+title:  "kdd 1"
 date:   2018-05-11 20:23:04 -0300
 imagem: http://placehold.it/750x300
-categories: [monstender,devblog]
+categories: [kdd,devblog]
 author: 
   - nome: Ricardo Luiz
     link: https://twitter.com/ric_luiz_jr

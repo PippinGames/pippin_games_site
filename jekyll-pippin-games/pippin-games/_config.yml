@@ -15,21 +15,38 @@
 # in the templates via {{ site.myvariable }}.
 title: Pippin-Games
 email: studiopippingames@gmail.com
+lang: en_US
 description: >- # this means to ignore newlines until "baseurl:"
-  #Write an awesome description for your new site here. You can edit this
-  #line in _config.yml. It will appear in your document head meta (for
-  #Google search results) and in your feed.xml site description.
+  Indie, Funny, Amazing Game Studio from Brazil
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://pippingames.com" # the base hostname & protocol for your site, e.g. http://example.com
+author: Ricardo Luiz, ricardoluiz508@gmail.com
+logo: /assets/logo_pippin.png
 twitter_username: pippin_games
 github_username:  pippin_games
+social:
+  name: Pippin Games
+  links: 
+    - https://twitter.com/pippin_games
+    - https://www.facebook.com/PippinGames
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-feed
+  - jekyll-feed  
+  - jekyll-paginate-v2
 
+# Pagination Settings - instale o plugin "gem install jekyll-paginate-v2"
+pagination:
+  enabled: true
+  per_page: 1
+  permalink: '/page/:num/'  
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+#escopos deafult para facilitar acesso a resources
 defaults:
   - scope:
       path: "assets/images/monstender/screenshort"
