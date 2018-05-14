@@ -1,4 +1,4 @@
 ---
 layout: monstender
-permalink: /monstender/
+permalink: /Monstender/
 ---
