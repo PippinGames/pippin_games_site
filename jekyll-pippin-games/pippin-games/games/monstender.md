@@ -1,4 +1,0 @@
----
-layout: monstender
-permalink: /monstender/
----
