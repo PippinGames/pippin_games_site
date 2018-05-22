@@ -35,9 +35,9 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed  
-  - jekyll-paginate-v2
+  - jekyll-paginate-v2  
 
-# Pagination Settings - instale o plugin "gem install jekyll-paginate-v2"
+# Pagination Settings - instale o plugin "gem install jekyll-paginate-v2". Documentação em https://github.com/sverrirs/jekyll-paginate-v2
 pagination:
   enabled: true
   per_page: 5

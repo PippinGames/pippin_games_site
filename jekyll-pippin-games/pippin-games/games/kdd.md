@@ -1,4 +1,4 @@
 ---
 layout: kdd
-permalink: /kawaii-deathu-desu/
+permalink: /kawaii-deathu-desu-press/
 ---

@@ -2,10 +2,10 @@
 layout: pippin-lab
 title: Kawaii Deathu Desu
 category: labs
-permalink: '/pippin-lab'
+permalink: '/labs/'
 pagination: 
   enabled: true
-  category: lab
+  category: labs
   per_page: 10
   permalink: '/lab/:num'
 ---

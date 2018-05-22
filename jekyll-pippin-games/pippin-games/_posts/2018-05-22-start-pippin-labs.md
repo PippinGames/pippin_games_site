@@ -1,7 +1,7 @@
 ---
 layout: post
 imagem: http://placehold.it/700x400
-categories: [lab,devblog]
+categories: [labs,devblog]
 author: 
   - nome: Ricardo Luiz
     link: https://twitter.com/ric_luiz_jr

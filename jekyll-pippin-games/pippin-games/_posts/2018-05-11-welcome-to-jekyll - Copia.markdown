@@ -2,7 +2,7 @@
 layout: post
 title:  "kdd 1"
 date:   2018-05-11 20:23:04 -0300
-imagem: 
+imagem:
 categories: [kdd,devblog]
 author: 
   - nome: Ricardo Luiz

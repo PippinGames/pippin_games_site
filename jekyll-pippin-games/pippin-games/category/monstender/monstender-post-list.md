@@ -2,7 +2,7 @@
 layout: devblog
 title: Monstender
 category: monstender
-permalink: '/monstender-devblog/'
+permalink: '/monstender/'
 pagination: 
   enabled: true
   category: monstender
