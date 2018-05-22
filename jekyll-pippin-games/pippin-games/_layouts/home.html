@@ -54,39 +54,37 @@ layout: default
 
   <!-- Marketing Icons Section -->
   <div class="row">
-    <div class="col-lg-4 mb-4">
-      <div class="card h-100 post-card">
-        <h4 class="card-header">DevLog 36 KDD - The Ghost Idol</h4>
-        <div class="card-body">
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-        </div>
-        <div class="card-footer link">
-          <a href="#">See more...</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 mb-4">
-      <div class="card h-100 post-card">
-        <h4 class="card-header">Do you Know Pippin Team?</h4>
-        <div class="card-body">
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
-        </div>
-        <div class="card-footer link">
-          <a href="#">See more...</a>
+
+    {% for p in site.posts limit:3 %}
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 post-card">
+          <h4 class="card-header">{{p.title}}</h4>
+          <div class="card-body">
+            <p class="card-text">{{p.excerpt}}</p>
+          </div>
+          <div class="card-footer link">
+            <a href="{{p.url | absolute_url}}">See more...</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-lg-4 mb-4">
-      <div class="card h-100 post-card">
-        <h4 class="card-header">Pippin in Campus Party</h4>
-        <div class="card-body">
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-        </div>
-        <div class="card-footer link">
-          <a href="#">See More...</a>
+    {% endfor %}
+    
+    {% for p in site.posts limit:3 offset:3 %}
+    <!-- 
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 post-card">
+          <h4 class="card-header">{{p.title}}</h4>
+          <div class="card-body">
+            <p class="card-text">{{p.excerpt}}</p>
+          </div>
+          <div class="card-footer link">
+            <a href="{{p.url | absolute_url}}">See more...</a>
+          </div>
         </div>
       </div>
-    </div>
+    -->
+    {% endfor %}
+
   </div>
   <!-- /.row -->
   
