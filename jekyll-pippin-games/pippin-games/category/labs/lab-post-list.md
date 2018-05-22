@@ -7,5 +7,5 @@ pagination:
   enabled: true
   category: labs
   per_page: 10
-  permalink: '/lab/:num'
+  permalink: '/labs/:num'
 ---
