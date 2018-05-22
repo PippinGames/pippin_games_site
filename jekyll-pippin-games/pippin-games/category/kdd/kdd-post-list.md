@@ -2,8 +2,9 @@
 layout: devblog
 title: Kawaii Deathu Desu
 category: kdd
+permalink: '/kawaii-deathu-desu-devblog/'
 pagination: 
-  enabled: true
+  enabled: true  
   category: kdd
-<!-- permalink: /kawaii-deathu-desu-devblog/ -->
+  permalink: '/kdd-page/:num'
 ---
