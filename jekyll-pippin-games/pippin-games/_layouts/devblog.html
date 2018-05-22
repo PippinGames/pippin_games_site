@@ -21,14 +21,14 @@ layout: default
     <div class="card mb-4 post-card">
         <div class="card-body">
           <div class="row">
-            {% if post.imagem %}
+            {% if post.thumbnail %}
             <div class="col-lg-6">
               <a href="{{post.url | absolute_url}}">
-                <img class="img-fluid" src="{{post.imagem}}" alt="">
+                <img class="img-fluid" src="{{post.thumbnail}}" alt="">
               </a>
             </div>
             {% endif %}
-            <div class=" {% if post.imagem %} col-lg-6 {% else %} col-lg-12 {% endif %}">
+            <div class=" {% if post.thumbnail %} col-lg-6 {% else %} col-lg-12 {% endif %}">
               <h2 class="card-title">{{post.title}}</h2>
               <p class="card-text">
                 {{post.excerpt}}

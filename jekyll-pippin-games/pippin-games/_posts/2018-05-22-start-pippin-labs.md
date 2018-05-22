@@ -1,6 +1,7 @@
 ---
 layout: post
-imagem: http://placehold.it/700x400
+title-image: http://placehold.it/900x300
+thumbnail: http://placehold.it/700x400
 categories: [labs,devblog]
 author: 
   - nome: Ricardo Luiz

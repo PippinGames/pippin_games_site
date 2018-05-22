@@ -24,8 +24,8 @@ layout: default
               {% for post in paginator.posts %}
                 <div class="col-lg-6 portfolio-item">
                   <div class="card h-100 post-card">
-                    {% if post.imagem %}
-                      <a href="{{post.url | absolute_url}}"><img class="card-img-top" src="{{post.imagem}}" alt=""></a>
+                    {% if post.thumbnail %}
+                      <a href="{{post.url | absolute_url}}"><img class="card-img-top" src="{{post.thumbnail}}" alt=""></a>
                     {% endif %}                    
                     <div class="card-body">
                       <h4 class="card-title">

@@ -2,7 +2,8 @@
 layout: post
 title:  "kdd 1"
 date:   2018-05-11 20:23:04 -0300
-imagem:
+title-image: http://placehold.it/900x300
+thumbnail: http://placehold.it/750x300
 categories: [kdd,devblog]
 author: 
   - nome: Ricardo Luiz
