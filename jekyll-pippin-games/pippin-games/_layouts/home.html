@@ -75,7 +75,7 @@ layout: default
    <br>
    <!-- Call to Action Section -->   
    <div class="row justify-content-center">
-      <section id="contact" style="padding: 0px;">
+      <section id="subscribe" style="padding: 0px;">
          <div class="container">
             <div class="row">
                <div class="col-lg-12 text-center">
@@ -238,6 +238,55 @@ layout: default
       </div>
    </section>
    <!-- /.row -->
+   <br>
+   <hr>
+   <br>
+   <!-- Pippin Contact Form -->
+   <section id="contact" style="padding: 0px;">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 text-center">
+               <h2 class=" my-4">Contact Us</h2>
+               <h3 class="section-subheading text-muted">Lest's talk and build amazing games</h3>
+            </div>
+         </div>
+         <form action="https://formspree.io/studiopippingames@gmail.com" class="col-md-12 form-group form-control-lg" method="POST">
+            <div class="input-group input-group-newsletter">
+               <div class="col-md-7">
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend mb-4">
+                        <div class="input-group-text">&nbsp;<i class="fa fa-user fa-3x" aria-hidden="true"></i>&nbsp;&nbsp;</div>
+                      </div>
+                      <input tabindex="1" required type="nome" id="nome" name="nome" class="form-control mb-4" placeholder="Enter your name..." aria-label="Enter your name..." aria-describedby="basic-addon">
+                    </div>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend mb-4">
+                        <div class="input-group-text"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></div>
+                      </div>
+                      <input tabindex="2" required type="email" id="email" name="_replyto" class="form-control mb-4" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon">
+                    </div>
+
+                    <!-- Campos de configuração do serviço -->
+                    <input type="hidden" name="_subject" value="Formulario de Contato" />   
+                    <input type="hidden" name="_cc" value="saulodfp@gmail.com,ricardoluiz508@gmail.com,dgtrilhasonora@gmail.com,thomaslessapixel@gmail.com,william.ecm@gmail.com" />                                   
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <!-- <input type="hidden" name="_next" value="https://site.io/thanks.html" /> -->   
+                    <!-- <input type="hidden" name="_format" value="plain" /> -->                 
+                    <!-- <input type="hidden" name="_language" value="es" /> -->
+                    <!-- endConfig -->
+
+                   <button tabindex="4" class="btn btn-primary btn-lg" type="submit">Send Message!</button>
+               </div>
+               <div class="col-md-5">
+                 <textarea tabindex="3" name="message" class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
+               </div>
+                                 
+            </div>
+         </form>
+      </div>
+   </section>
+   <!-- /.row -->
+
 </div>
 <!-- /.container -->
 <br>      
