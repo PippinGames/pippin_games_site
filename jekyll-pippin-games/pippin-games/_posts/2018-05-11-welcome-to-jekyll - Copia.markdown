@@ -4,7 +4,8 @@ title:  "kdd 1"
 date:   2018-05-11 20:23:04 -0300
 title-image: http://placehold.it/900x300
 thumbnail: http://placehold.it/750x300
-categories: [kdd,devblog]
+slide-home-image: http://placehold.it/1900x1080
+categories: [kdd,devblog,slideshome]
 author: 
   - nome: Ricardo Luiz
     link: https://twitter.com/ric_luiz_jr

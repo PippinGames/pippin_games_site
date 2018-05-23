@@ -54,12 +54,16 @@ pagination:
 defaults:
   - scope:
       path: "assets/images/monstender/screenshort"
-    values:
-      monstender_images: true
+      values:
+        monstender_images: true
   - scope:
       path: "assets/images/kdd/screenshort"
-    values:
-      kdd_images: true  
+      values:
+        kdd_images: true
+  - scope:
+      path: "assets/images/blog"
+      values:
+          blog_images: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
